@@ -13,9 +13,12 @@ public class Paciente {
     private String nome;
     private String plano;
     private String email;
+    
+    private static int proximoId = 1;
 
-    public Paciente(int id, String nome) {
-        this.id = id;
+    public Paciente(String nome) {
+        this.id = proximoId;
+        proximoId++;
         this.nome = nome;
     }
 

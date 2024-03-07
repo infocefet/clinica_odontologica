@@ -17,7 +17,7 @@ package clinicaodontologica;
  *       e da lista de parâmetros se houver.
  * @author 85477044349
  */
-public class Dentista {
+public class Dentista extends ProfissionalSaude{
     
     private int CRO;
     private String nome;

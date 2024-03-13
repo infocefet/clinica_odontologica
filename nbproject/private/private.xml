@@ -5,8 +5,13 @@
         <group>
             <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/Consulta.java</file>
             <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/ClinicaOdontologica.java</file>
+            <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/TelaCadastroPaciente.java</file>
+            <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/TelaCadastroDentista.java</file>
             <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/Dentista.java</file>
             <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/Paciente.java</file>
+            <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/ProfissionalSaude.java</file>
+            <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/BancoDeDados.java</file>
+            <file>file:/C:/Users/85477044349/Documents/NetBeansProjects/ClinicaOdontologica/src/clinicaodontologica/TelaPrincipal.java</file>
         </group>
     </open-files>
 </project-private>

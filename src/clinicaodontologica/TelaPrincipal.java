@@ -51,9 +51,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu1.setText("Cadastro");
 
         mnuCadastrarPaciente.setText("Paciente");
+        mnuCadastrarPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuCadastrarPacienteActionPerformed(evt);
+            }
+        });
         jMenu1.add(mnuCadastrarPaciente);
 
         mnuCadastrarDentista.setText("Dentista");
+        mnuCadastrarDentista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuCadastrarDentistaActionPerformed(evt);
+            }
+        });
         jMenu1.add(mnuCadastrarDentista);
         jMenu1.add(jSeparator1);
 
@@ -90,6 +100,34 @@ public class TelaPrincipal extends javax.swing.JFrame {
         //fechar o programa
         System.exit(0);
     }//GEN-LAST:event_mnuSairActionPerformed
+
+    private void mnuCadastrarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCadastrarPacienteActionPerformed
+        // 1 - Instanciar o objeto da Tela interna
+        TelaCadastroPaciente telaInterna = new TelaCadastroPaciente();
+        
+        // 2 - Adcionar o objeto da tela ao jDesktopPane
+        desktop.add(telaInterna);
+        
+        // 3 - Tornar visível a tela interna
+        telaInterna.setVisible(true);
+        
+        //4 - Criar o X pra fechar a tela interna
+        telaInterna.setClosable(true);
+    }//GEN-LAST:event_mnuCadastrarPacienteActionPerformed
+
+    private void mnuCadastrarDentistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuCadastrarDentistaActionPerformed
+          // 1 - Instanciar o objeto da Tela interna
+        TelaCadastroDentista telaInterna = new TelaCadastroDentista();
+        
+        // 2 - Adcionar o objeto da tela ao jDesktopPane
+        desktop.add(telaInterna);
+        
+        // 3 - Tornar visível a tela interna
+        telaInterna.setVisible(true);
+        
+        //4 - Criar o X pra fechar a tela interna
+        telaInterna.setClosable(true);
+    }//GEN-LAST:event_mnuCadastrarDentistaActionPerformed
 
     /**
      * @param args the command line arguments

@@ -14,8 +14,8 @@ public class BancoDeDados {
     
     
     //Lista de Objetos em JAVA - ArrayList
-    private ArrayList<Paciente> listaPacientes = new ArrayList<Paciente>() ;
-    private ArrayList<Dentista> listaDentistas = new ArrayList<Dentista>() ;
+    private static ArrayList<Paciente> listaPacientes = new ArrayList<Paciente>() ;
+    private static ArrayList<Dentista> listaDentistas = new ArrayList<Dentista>() ;
     
     public void addPaciente(Paciente paciente)
     {
@@ -25,6 +25,14 @@ public class BancoDeDados {
     public void addDentista(Dentista dentista)
     {
         listaDentistas.add(dentista);
+    }
+
+    public ArrayList<Paciente> getListaPacientes() {
+        return listaPacientes;
+    }
+
+    public ArrayList<Dentista> getListaDentistas() {
+        return listaDentistas;
     }
     
 }

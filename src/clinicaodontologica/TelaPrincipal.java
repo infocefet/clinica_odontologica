@@ -34,6 +34,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         mnuSair = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        mnuAgendar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,6 +79,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Consulta");
+
+        mnuAgendar.setText("Agendar");
+        mnuAgendar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuAgendarActionPerformed(evt);
+            }
+        });
+        jMenu2.add(mnuAgendar);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -129,6 +139,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         telaInterna.setClosable(true);
     }//GEN-LAST:event_mnuCadastrarDentistaActionPerformed
 
+    private void mnuAgendarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAgendarActionPerformed
+         // 1 - Instanciar o objeto da Tela interna
+        TelaAgendarConsulta telaInterna  = new TelaAgendarConsulta();
+        
+        // 2 - Adcionar o objeto da tela ao jDesktopPane
+        desktop.add(telaInterna);
+        
+        // 3 - Tornar visível a tela interna
+        telaInterna.setVisible(true);
+        
+        //4 - Criar o X pra fechar a tela interna
+        telaInterna.setClosable(true);
+    }//GEN-LAST:event_mnuAgendarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -170,6 +194,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JMenuItem mnuAgendar;
     private javax.swing.JMenuItem mnuCadastrarDentista;
     private javax.swing.JMenuItem mnuCadastrarPaciente;
     private javax.swing.JMenuItem mnuSair;
